@@ -1,3 +1,11 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:831843,50:DB2777,100:F472B6&height=210&section=header&text=REELPULSE&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=Short-Form%20Content%20Intelligence&descAlignY=60&descSize=16" width="100%" />
+
+</div>
+
+---
+
 # 💜 ReelPulse — Create Smarter. Compare Better.
 
 **ReelPulse** is a Python-based content planning and video analytics application designed to help short-form content creators organize their ideas, plan their posting schedules, and compare video engagement performance.

@@ -1,165 +1,180 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:831843,50:DB2777,100:F472B6&height=210&section=header&text=REELPULSE&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=Short-Form%20Content%20Intelligence&descAlignY=60&descSize=16" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F1D1D,45:EA580C,100:FBBF24&height=220&section=header&text=REELPULSE&fontSize=46&fontColor=FFFFFF&fontAlignY=38&desc=Plan%20the%20story.%20Learn%20from%20the%20numbers.&descAlignY=61&descSize=15" width="100%" alt="ReelPulse — Plan the story. Learn from the numbers." />
+
+<p>
+  <strong>A short-form content planning and engagement comparison toolkit.</strong>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3B2F2F?style=for-the-badge&logo=python&logoColor=FBBF24" alt="Python" />
+  <img src="https://img.shields.io/badge/Streamlit-EA580C?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Analytics-F97316?style=for-the-badge&logo=googleanalytics&logoColor=white" alt="Analytics" />
+  <img src="https://img.shields.io/badge/Status-Learning%20Project-92400E?style=for-the-badge" alt="Learning project" />
+</p>
 
 </div>
 
 ---
 
-# 💜 ReelPulse — Create Smarter. Compare Better.
+## 🎬 What is ReelPulse?
 
-**ReelPulse** is a Python-based content planning and video analytics application designed to help short-form content creators organize their ideas, plan their posting schedules, and compare video engagement performance.
+**ReelPulse** is a Python project for creators who want help shaping short-form video ideas, planning posts, and reviewing engagement figures in one place. It includes a terminal-based assistant, a Streamlit content workspace, and a separate dashboard for comparing video metrics.
 
-It combines a command-line content assistant with interactive Streamlit dashboards to make content planning and performance analysis easier.
+The project currently uses **predefined rules and user-entered metrics**. It is a practical content-planning prototype—not an automatic social-media analytics service or a trained AI prediction model.
 
-## ✨ Features
+## ✨ What you can do
 
-### 💡 1. Idea-to-Story Assistant
-- Generate content ideas from a topic and target audience.
-- Choose educational, funny, or storytelling styles.
-- Create video hooks and scene-by-scene outlines.
-- Generate on-screen text, captions, hashtags, and calls to action.
-- Get practical creator tips for content development.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 📅 2. Smart Content Planner
-- Create a seven-day content plan.
-- Customize plans based on niche, platform, content goal, and posting frequency.
-- Support Instagram and YouTube.
-- Choose education, growth, or engagement goals.
-- Validate inputs and posting-frequency limits.
+### 💡 Idea-to-Story Assistant
+- Start with a topic and target audience.
+- Choose a content style.
+- Draft an opening hook and scene-by-scene outline.
+- Get caption, hashtag, call-to-action, and creator-tip suggestions.
 
-### 🔎 3. Performance Detective
-- Enter video views, likes, comments, and shares.
-- Calculate total recorded interactions and interaction rate.
-- Receive rule-based suggestions for content experiments.
-- Handle invalid numeric inputs and zero views.
+</td>
+<td width="50%" valign="top">
 
-### 📊 4. Video Comparison Dashboard
-- Compare multiple videos using manually entered metrics.
-- Calculate and compare interaction rates.
-- Visualize performance through a comparison chart.
-- Identify the highest interaction rate.
-- Compare video views and engagement metrics through a Streamlit dashboard.
+### 🗓️ Content Planner
+- Build a short plan around your niche.
+- Select a platform and content goal.
+- Choose how many days to plan.
+- Use the output as a starting point, then adapt it to your audience.
 
-## 🛠️ Technology Stack
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-| Technology | Purpose |
+### 📊 Performance Detective
+- Enter views, likes, comments, and shares.
+- Calculate recorded interactions and interaction rate.
+- Receive simple, rule-based ideas for what to test next.
+- Handle invalid values and zero-view cases.
+
+</td>
+<td width="50%" valign="top">
+
+### 🔎 Video Comparison
+- Add multiple videos and their metrics.
+- View the data in a table and comparison chart.
+- Compare interaction rates and find the highest rate among videos with views.
+- Reset the comparison data when starting a new review.
+
+</td>
+</tr>
+</table>
+
+## 📈 Interaction-rate calculation
+
+ReelPulse uses this simple formula:
+
+`Interaction rate (%) = ((Likes + Comments + Shares) / Views) × 100`
+
+**Example:** 20 likes, 40 comments, and 20 shares on a video with 1,000 views gives an interaction rate of **8%**.
+
+This is a comparison metric, not a complete measure of content quality. Results depend on the accuracy and consistency of the metrics entered.
+
+## 🧰 Built with
+
+| Technology | Role in the project |
 |---|---|
-| Python | Application logic |
-| Streamlit | Interactive dashboards |
-| Rule-based logic | Content suggestions and planning |
-| Data visualization | Comparing video performance |
+| Python | Application logic and content-planning rules |
+| Streamlit | Interactive content and analytics dashboards |
+| Pandas | Organizing video metrics for comparison |
+| Streamlit charts | Visual comparison of interaction rates |
 | Git & GitHub | Version control and project hosting |
 
-## 🧮 Interaction Rate Formula
+## 🚀 Run it locally
 
-ReelPulse calculates interaction rate using the following formula:
+### Requirements
+- Python installed
+- `pip`
+- A terminal or command prompt
 
-**Interaction Rate (%) = ((Likes + Comments + Shares) / Views) × 100**
+### 1. Clone the repository
 
-**Example:**
-
-For a video with 1,000 views, 20 likes, 40 comments, and 20 shares:
-
-Interaction Rate = ((20 + 40 + 20) / 1,000) × 100
-
-**Result: 8%**
-
-This metric helps compare recorded interactions relative to video views. A higher rate does not automatically mean better overall content quality.
-
-🚀 Getting Started
-
-Prerequisites
-
-Python 3.12 or a compatible Python 3 version
-
-pip package installer
-
-Terminal or command prompt
-
-1. Clone the repository
-
-Replace YOUR_USERNAME with your GitHub username.
-
-git clone https://github.com/YOUR_USERNAME/ReelPulse.git
+```bash
+git clone https://github.com/mallikarajapure-collab/ReelPulse.git
 cd ReelPulse
+```
 
-2. Create a virtual environment
+### 2. Create and activate a virtual environment
 
+**Windows PowerShell**
+```powershell
 python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
 
-Activate it on Windows:
+**macOS / Linux**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
 
-.venv\Scripts\Activate.ps1
+### 3. Install dependencies
 
-3. Install dependencies
-
-Install the packages required by the project. If a requirements.txt file is available, run:
-
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the command-line application
+### 4. Start the application you want to use
 
+**Terminal-based assistant**
+```bash
 python main.py
+```
 
-Follow the menu options to explore the content assistant features.
-
-5. Launch the Streamlit dashboard
-
-Run the main dashboard:
-
+**Main Streamlit dashboard**
+```bash
 streamlit run app.py
+```
 
-To launch the video comparison dashboard separately:
-
+**Video comparison dashboard**
+```bash
 streamlit run compare.py
+```
 
-Open the local URL displayed in the terminal.
+Streamlit prints a local address in the terminal; open it in your browser. Run the dashboards as separate commands in separate terminal sessions if you want to use both at the same time.
 
-📁 Project Structure
+## 🗂️ Repository structure
 
+```text
 ReelPulse/
-├── app.py
-├── compare.py
-├── main.py
-├── README.md
+├── app.py             # Streamlit content assistant and planner
+├── compare.py         # Video metrics comparison dashboard
+├── main.py            # Terminal-based content assistant
+├── requirements.txt   # Python dependencies
 ├── .gitignore
-└── requirements.txt  # Include if available
+└── README.md
+```
 
-This is a simplified overview. Update it to match the files actually included in the repository.
+## ⚠️ Current scope and limitations
 
-🧪 Testing
+- Content ideas, plans, and performance suggestions are generated with predefined rules.
+- Video statistics are entered manually; the app does not currently connect to Instagram or YouTube analytics APIs.
+- There is no trained machine-learning model or external LLM API powering the current content-generation logic.
+- The interaction rate can be misleading when source metrics are missing or recorded differently across platforms.
+- The output is intended as a planning aid; review topic-specific claims and recommendations before publishing.
 
-The project has been manually tested for core content-assistant workflows, input validation, invalid numeric inputs, zero-view handling, and posting-frequency boundaries.
+## 🛣️ Possible next steps
 
-The comparison dashboard has also been tested with sample video metrics, interaction-rate calculations, performance summaries, and chart rendering.
+- Add optional LLM-assisted drafts with clear user control.
+- Save plans and comparison data between sessions.
+- Support importing metrics from a CSV file.
+- Add more chart types and comparisons over time.
+- Add automated tests for core calculations and input validation.
 
-⚠️ Limitations
+## 👩‍💻 About
 
-Content suggestions are generated using predefined rules.
+Built by **Mallika Rajapure** as a Python project exploring content planning, rule-based assistance, and interactive data visualization.
 
-Video metrics are entered manually; automatic social media analytics integration is not currently included.
+<div align="center">
 
-The current implementation does not claim to use a trained machine-learning model or an external LLM API.
+**ReelPulse · Make the next post a more informed experiment.**
 
-Performance comparisons depend on the accuracy of the supplied metrics.
-
-🔮 Future Enhancements
-
-Optional LLM-powered content generation.
-
-Persistent storage for content plans and video analytics.
-
-Additional engagement charts and performance insights.
-
-Automated tests and expanded error handling.
-
-A more polished, responsive user interface.
-
-👩‍💻 Author
-
-Mallika Rajapure
-
-A personal project exploring Python development, content planning, engagement analytics, and interactive dashboards.
-
-ReelPulse — Create smarter. Compare better.
+</div>
